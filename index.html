@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/8d0512b58e.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;600&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,600;8..144,700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="" alt="Flávio Viana" />
+      </div>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/KaTSu113"> GitHub</a>
+        </li>
+
+        <li>
+          <a target="_blank" href="mailto:flaviogabrielandrade@gmail.com">
+            Email</a
+          >
+        </li>
+
+        <li>
+          <a target="_blank" href="https://wa.me/93981218330"> WhatsApp</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1>Flávio Viana</h1>
+          <h5>Front-end Developer</h5>
+        </div>
+
+        <div onclick="displayAbout()" id="arrow">
+            <i id="animation"class="fa-solid fa-arrow-down-a-z"></i>
+        </div>
+        <div style="display: none;" id="about">
+          <p>
+            Olá meu nome é Flávio, sou apaixonado por tecnologia. Meu primeiro
+            contato com esse mundo, foi quando meu avô comprou um computador
+            para minha família, pórem não veio com sistema operacional
+            instalado. A partir daí começou minha saga, sendo a primeira fase,
+            instalar o windows XP! Atualmente sou formado em Sistemas de
+            informação, estou estudando Front-end para desenvolvimento de
+            projetos web. Através de projetos publicados no GitHub demonstro meu
+            conhecimento em: ReactJS, NextJS e Frameworks para CSS, como
+            Styled-Components. Espero como desenvolvedor ser além dos códigos,
+            construir relações de cooperatividade no ambiente de trabalho, além
+            de sempre buscar novas formas de desenvolvimento, sendo a
+            adaptabilidade uma das minhas principais metas!
+          </p>
+        </div>
+
+        <div class="form">
+          <div>
+            <p>Deixe seu contato!</p>
+          </div>
+          <form action="">
+            <input type="text" placeholder="Seu melhor email☺" />
+            <button>enviar!</button>
+          </form>
+        </div>
+      </section>
+      <div></div>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById("animation");
+            arrow .classList.toggle('rotate');
+
+            var display = document.getElementById("about");
+            display.classList.toggle('active');
+        }
+    </script>
+  </body>
+
+</html>
